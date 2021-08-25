@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khamsat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><img src="images/Logo.png" alt="logo"></div>
+            <div class='top-menu'>
+                <ul>
+                    <li><a href="#">اندرويد</a></li>
+                    <li><a href="#">ايفون</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </div>  
+        </nav>
+        <div class="main">
+            <aside>
+                <ul>
+                    <li><a href="#" class="asideMenu active">الكل</a><span class="active-bg">85.453</span></li>
+                    <li><a href="#" class="asideMenu">تكنولوجيا</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">علوم</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">الرياضة</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">فنون القتال</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">علم الجمال</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">البشرة</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">عنوان</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">قسم جديد</a><span>85.453</span></li>
+                    <li><a href="#" class="asideMenu">عنوان الموضوع</a><span>85.453</span></li>
+                </ul>
+            </aside>
+            <section class="subject-section">
+                <div class="search">
+                    <input type="text" class="search-word" placeholder="ادخل كلمات البحث">
+                    <button class="search-btn"><img src="images/search icon.png" alt="search"></button>
+                </div>
+                <div class="obj-info">
+                    رقم الحديث 
+                    <input type="text" class="obj-num"><span> 1 الى 50 من 844151</span>
+                </div>
+                <div class="object">
+                    <div class="object-title">
+                        حديث رقم : 10
+                    </div>
+                    <div class="object-body">
+                        ا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن  انا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن المقال مقال من الميقال تقال انتقال نقل المقال نقلاً مقليا مقلاعياُ انا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن المقال مقال من الميقال تقال انتقال نقل المقال نقلاً مقليا مقلاعياُ انا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن المقال مقال من الميقال تقال انتقال نقل المقال نقلاً مقليا مقلاعياُ المقال 
+                    </div>
+                </div>
+                <div class="object">
+                    <div class="object-title">
+                        حديث رقم : 10
+                    </div>
+                    <div class="object-body">
+                        ا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن  انا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن المقال مقال من الميقال تقال انتقال نقل المقال نقلاً مقليا مقلاعياُ انا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن المقال مقال من الميقال تقال انتقال نقل المقال نقلاً مقليا مقلاعياُ انا مجرد مقال مسوي نفسي مقال ترى انا مقال انت و انا مقال كلنى نقرأ مقال هذا مقال ألي قال أن المقال مقال من الميقال تقال انتقال نقل المقال نقلاً مقليا مقلاعياُ المقال 
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="paging">
+            <a href="#" class="page-num">1</a>
+            <a href="#" class="page-num">2</a>
+            <a href="#" class="page-num">3</a>
+            <a href="#" class="page-num">4</a>
+            <a href="#" class="page-num">5</a>
+            <a href="#" class="page-num active-page">6</a>
+            <a href="#" class="page-num">7</a>
+            <a href="#" class="page-num">8</a>
+            <a href="#" class="page-num">9</a>
+            <a href="#" class="page-num">10</a>
+        </div>
+    </div>
+    <script>
+        
+        let asideMenu = document.querySelectorAll(".asideMenu");
+        let asideSpan = document.querySelectorAll("aside li span");
+        let pageNum = document.querySelectorAll('.page-num');
+        console.log(pageNum.length);
+        asideMenu.forEach(el => {
+            el.addEventListener("click", () => {
+                for(let i=0; i < asideMenu.length; i++) {
+                    asideMenu[i].classList.remove("active");
+                    asideSpan[i].classList.remove('active-bg');
+                }
+                el.classList.add("active");
+                addActivebg();
+            });
+        });
+
+        function addActivebg() { 
+            for(let i=0; i<asideMenu.length; i++) {
+                if (asideMenu[i].className !== "asideMenu") {
+                    asideSpan[i].classList.add("active-bg");
+                }
+            }
+        }
+        
+        pageNum.forEach(p => {
+            
+            p.addEventListener('click', () => {
+                for(let i=0; i<pageNum.length; i++) {
+                    pageNum[i].classList.remove('active-page');
+                }
+                console.log(p);
+                p.classList.add("active-page");
+            });
+        })
+    </script>
+</body>
+</html>
